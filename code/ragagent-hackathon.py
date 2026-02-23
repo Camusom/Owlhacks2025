@@ -64,7 +64,7 @@ def translate_to_en(text):
 
 # 1. Gemini API
 
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "AIzaSyD3eSzBViF98HFwvrHSbRGUFWU-sG0NFg8")
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "AIzaSyCiHwjuM1_-cLQmlmFhMvn2L2b_cxcwAKw")
 
 # Configure the API key once at the start of your script
 genai.configure(api_key=GEMINI_API_KEY)
@@ -361,4 +361,5 @@ async def check_barcode(
 if __name__ == "__main__":
     # ... your test calls ...
     uvicorn.run(app, host="0.0.0.0", port=7860)
+
 
